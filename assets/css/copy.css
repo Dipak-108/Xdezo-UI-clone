@@ -52,12 +52,18 @@ a:hover {
 .menu li {
   width: max-content;
   list-style: none;
+  border: solid;
+  line-height:3rem ;
 }
 
 nav li:hover .fa-caret-down {
   cursor: pointer;
   transform: rotate(-180deg);
   transition: 0.2s ease-in;
+}
+
+nav a:hover{
+  color: #ec4d37;
 }
 
 .nav-link {
@@ -93,6 +99,41 @@ nav li:hover .fa-caret-down {
   background-color: #007bff;
 }
 
+/* Dropdown Css */
+.about_dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 3rem;
+  
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: 5s ease-in;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.about_dropdown:hover .dropdown-content {display: block;}
+
+.about-dropdown:hover .courses-drp-dwn {background-color: #3e8e41;}
+
+
+/* dropdown css end */
+
 /* !!!!!!!!!!!!!!!!!! */
 /* Upper section css */
 /* !!!!!!!!!!!!!!!! */
@@ -103,6 +144,7 @@ nav li:hover .fa-caret-down {
   /* border: solid; */
   background-color: #f6f7fd;
   display: flex;
+  padding-top: 8rem;
   /* flex-wrap: wrap; */
 }
 
@@ -355,6 +397,10 @@ h2 {
 }
 
 @media screen and (max-width: 965px) {
+
+  .upper-section{
+    padding-top: 1rem;
+  }
   .menu {
     display: none;
     flex-direction: column;
