@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* navigation bar CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 0.1rem;
+  /* border: solid; */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #f6f7fd;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.sm-logo div {
+  display: inline-block;
+}
+
+.logo img {
+  height: 50px;
+  width: 100%;
+}
+.fbimg img,
+.instaimg img {
+  height: 30px;
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.menu li {
+  width: max-content;
+  list-style: none;
+}
+
+nav li:hover .fa-caret-down {
+  cursor: pointer;
+  transform: rotate(-180deg);
+  transition: 0.2s ease-in;
+}
+
+.nav-link {
+  color: rgb(14, 11, 11);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+
+  /* border: solid; */
+}
+
+.navbar .icon {
+  display: none;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  width: max-content;
+}
+
+.signin {
+  background-color: #555;
+}
+
+.signup {
+  background-color: #007bff;
+}
+
+/* !!!!!!!!!!!!!!!!!! */
+/* Upper section css */
+/* !!!!!!!!!!!!!!!! */
+
+.upper-section {
+  /* max-height: calc(100vh - 4.5rem); */
+  height: auto;
+  /* border: solid; */
+  background-color: #f6f7fd;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.upper-container-div {
+  display: flex;
+  flex: 1;
+  /* margin: 2rem; */
+  /* padding: 5rem 0 0 5rem; */
+  margin: auto;
+  height: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* border: solid rebeccapurple; */
+}
+
+.upper-left-div {
+  max-width: 50%;
+}
+
+.upper-left-div .first-line {
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.upper-left-div .second-line {
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+/* button css */
+/* !!!!!!!!! */
+button {
+  padding: 0.7rem;
+  width: fit-content;
+  border-radius: 1rem;
+  background: #ec4d37;
+  font-size: 1.2rem;
+  color: aliceblue;
+  font-weight: bold;
+  cursor: pointer;
+  border: solid gainsboro;
+  
+}
+
+button:hover {
+  background: rgb(255, 255, 255);
+  color: #ec4d37;
+  transform: translate(0px, -10px);
+  border: solid #ec4d37;
+  transition: 0.2s ease-out;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Button css end */
+/* !!!!!!!!!!!!! */
+
+.upper-container-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.upper-right-div {
+  height: fit-content;
+  width: auto;
+  /* min-width: 20%; */
+  /* height: 100%; */
+  /* border: solid red; */
+}
+.upper-right-div img {
+  width: 100%;
+  height: auto;
+}
+
+.upper-left-div .image-container {
+  max-width: 80%;
+  /* border: solid red; */
+}
+
+/* !!!!! */
+/* partner-slider-section */
+/* !!!!! */
+
+.partner-slider-section {
+  height: 20rem;
+  width: 100%;
+  /* border: solid gold; */
+}
+
+.slider-div h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* courses-and-training-section */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.courses-and-training-section {
+  /* border: solid rgb(0, 90, 128); */
+  width: 100%;
+}
+
+.courses-and-training-section h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(33, 30, 30);
+}
+
+.courses-and-training-section .courses-and-training-card-div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  /* border:solid violet; */
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.courses-and-training-card-div .card {
+  /* height: fit-content; */
+  margin-top: 0.3rem;
+  /* border: solid #7415c6; */
+  /* min-width: 24%; */
+  flex: 1 1 300px;
+  padding: 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  max-width: 400px;
+}
+
+.courses-and-training-card-div .card:hover {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+  transition: 0.1s ease-out;
+}
+
+.courses-and-training-card-div .card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.courses-and-training-card-div .card h2,
+p {
+  text-align: center;
+  padding-top: 1rem;
+}
+h2 {
+  font-weight: 100;
+  /* font-size: 1rem; */
+}
+
+/* !!!!!!!!!!!!!!!!! */
+/* About us Section */
+/* !!!!!!!!!!!!!!! */
+.about_us_section {
+  margin: 1rem;
+}
+
+.about_us_section .explore {
+  margin: 2rem 0;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_us_section .about_us {
+  display: flex;
+  /* border: solid; */
+  justify-content: space-evenly;
+  /* margin: 1rem 2rem; */
+  flex-wrap: wrap;
+}
+
+.about_us .about_us_left {
+  width: 50%;
+  /* border: solid rebeccapurple; */
+  /* height: 60vh; */
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    text-align: left;
+    /* margin: 1rem; */
+    line-height: 1.5rem;
+    color: #555;
+  }
+}
+
+.about_us .about_us_right {
+  flex: 1;
+  margin: 3rem 4rem 1rem 1rem;
+
+  p {
+    line-height: 1.5rem;
+    color: #353333;
+  }
+  button{
+    margin-top: 1rem;
+  }
+}
+
+.at_glance {
+  margin-top: 2rem;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  #counter_section {
+    /* border: solid rebeccapurple; */
+    display: flex;
+    justify-content: space-around;
+
+    .counter_justify {
+      font-size: 3rem;
+      color: #ec4d37;
+      font-weight: bold;
+    }
+  }
+
+  .label_div {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+  }
+}
+
+.counter_inline {
+  display: inline-block;
+}
+
+@media (max-width: 806px) {
+  nav ul {
+    display: none;
+  }
+
+  .upper-left-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .upper-left-div {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 965px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f6f7fd;
+  }
+
+  .sm-logo {
+    display: none;
+  }
+
+  .menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar a.icon {
+    display: block;
+    font-size: 2rem;
+  }
+
+  .navbar.responsive {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar.responsive .menu {
+    display: flex;
+  }
+
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  button {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .about_us {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about_us .about_us_left {
+    width: 100%;
+    text-align: center;
+    /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
+    border-radius: 20px;
+  }
+  .about_us .about_us_right {
+    width: auto;
+
+    margin: auto;
+    margin-top: 1rem;
+  }
+
+  .about_us .about_us_right button {
+    margin: auto;
+    margin-top: 2rem;
+  }
+}
+
+/* .number {
+  font-size: 3em;
+  color: rebeccapurple;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+  display: inline-block;
+}
+
+#counter-section {
+  background-color: lightblue;
+}
+.visible {
+  opacity: 1;
+}
+span{
+font-size: 3em;
+} */
