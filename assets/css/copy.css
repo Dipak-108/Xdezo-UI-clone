@@ -131,6 +131,19 @@ nav a:hover{
 
 .about-dropdown:hover .courses-drp-dwn {background-color: #3e8e41;}
 
+table, th, td {
+  /* border:solid; */
+  border-collapse: collapse;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  overflow-y: scroll;
+}
+
+table th:hover{
+  border-bottom: solid;
+}
+
 
 /* dropdown css end */
 
