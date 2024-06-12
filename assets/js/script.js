@@ -72,3 +72,32 @@ function responsive(){
 
 // responsive script end
 
+
+// about_dropdown onclick
+
+function drp_down(){
+    let drp_down=document.getElementsByClassName("drp-down")[0];
+    let drp_down_content=document.getElementsByClassName("dropdown-content")[0];
+    
+    drp_down.addEventListener('click', function(event) {
+        if (drp_down_content.style.display === "none") {
+            drp_down_content.style.display = "block";
+        } else {
+            drp_down_content.style.display = "none";
+        }
+       
+        event.stopPropagation();
+    });
+    
+
+
+    if(drp_down_content.style.display = "block"){
+        document.body.addEventListener('click', function(event) {
+            drp_down_content.style.display = "none";
+        });
+    }
+    
+
+    
+}
+
