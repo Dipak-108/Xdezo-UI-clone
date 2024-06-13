@@ -75,29 +75,71 @@ function responsive(){
 
 // about_dropdown onclick
 
-function drp_down(){
-    let drp_down=document.getElementsByClassName("drp-down")[0];
-    let drp_down_content=document.getElementsByClassName("dropdown-content")[0];
+// function drp_down(){
+
     
-    drp_down.addEventListener('click', function(event) {
+//     let abt_drp_down=document.getElementById("id_about_dropdown");
+//     let drp_down_content=document.getElementById("id_dropdown-content");
+    
+//     // drp_down_content.style.display = "none";
+    
+
+//     abt_drp_down.addEventListener('click', function(event) {
+        
+//         console.log("before entering if "+drp_down_content.style.display);
+        
+   
+//         if (drp_down_content.style.display ==="block") {
+
+//             drp_down_content.style.display = "none";
+//         } else  {
+//             drp_down_content.style.display ="block";
+//         }
+       
+//         event.stopPropagation();
+//         // console.log(drp_down_content.style);
+//     });
+    
+
+
+//     if(drp_down_content.style.display = "block"){
+//         document.body.addEventListener('click', function(event) {
+//             drp_down_content.style.display = "none";
+//         });
+//     }
+    
+
+    
+
+// }
+
+
+function drp_down() {
+    console.log("clicked once");
+    
+    let abt_drp_down = document.getElementById("id_about_dropdown");
+    let drp_down_content = document.getElementById("id_dropdown-content");
+    drp_down_content.style.display = "none";
+
+    abt_drp_down.addEventListener('click', event_fire);
+    
+    function event_fire(event) {
+        console.log("clicked inside event");
+        // console.log(event);
         if (drp_down_content.style.display === "none") {
             drp_down_content.style.display = "block";
         } else {
             drp_down_content.style.display = "none";
         }
-       
         event.stopPropagation();
-    });
-    
-
-
-    if(drp_down_content.style.display = "block"){
-        document.body.addEventListener('click', function(event) {
-            drp_down_content.style.display = "none";
-        });
     }
     
-
-    
+    document.body.addEventListener('click', function(event) {
+        if (drp_down_content.style.display === "block") {
+            drp_down_content.style.display = "none";
+        }
+    });
 }
 
+
+drp_down();
