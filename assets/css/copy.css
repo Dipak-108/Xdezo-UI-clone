@@ -44,6 +44,7 @@ a:hover,.drp-down p {
 .fbimg img,
 .instaimg img {
   height: 30px;
+  margin-right: 0.5rem;
 }
 
 .menu {
@@ -319,7 +320,7 @@ button:hover {
 
 .courses-and-training-card-div .card:hover {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  transform: scale(1.1);
+  transform: scale(1.01);
   transition: 0.1s ease-out;
 }
 

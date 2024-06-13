@@ -1,0 +1,231 @@
+
+        @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+
+          }
+          
+          /* navigation bar CSS */
+          
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          
+          a:hover,.drp-down p {
+            cursor: pointer;
+          }
+          
+          .navbar {
+            display: flex;
+            justify-content: space-between;
+            
+            align-items: center;
+            padding: 1rem;
+            margin: 0 0.1rem;
+            /* border: solid; */
+            position: sticky;
+            /* position: relative; */
+            top: 0;
+            z-index: 1;
+            background-color: #f6f7fd;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          }
+          .sm-logo div {
+            display: inline-block;
+          }
+          
+          .logo img {
+            height: 50px;
+            width: 100%;
+          }
+          .fbimg img,
+          .instaimg img {
+            height: 30px;
+            margin-right: 0.5rem;
+          }
+          
+          .menu {
+            display: flex;
+            gap: 2rem;
+          }
+          
+          .menu li {
+            width: max-content;
+            list-style: none;
+            /* border: solid; */
+            line-height: 3rem;
+            /* position: relative; */
+            font-weight: 500;
+          }
+          
+          nav .drp-down:hover{
+            .fa-caret-down {
+              cursor: pointer;
+              transform: rotate(-180deg);
+              transition: 0.2s ease-in;
+            }
+          }
+          
+          
+          
+          nav a:hover,p:hover {
+            color: #ec4d37;
+          }
+          
+          .nav-link {
+            color: rgb(14, 11, 11);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+          
+            /* border: solid; */
+          }
+          
+          .navbar .icon {
+            display: none;
+          }
+          
+          .auth-buttons {
+            display: flex;
+            gap: 10px;
+          }
+          
+          .btn {
+            padding: 8px 16px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            width: max-content;
+          }
+          
+          .signin {
+            background-color: #555;
+          }
+          
+          .signup {
+            background-color: #007bff;
+          }
+          
+          /* Dropdown Css */
+          /* .about_dropdown {
+            position: relative;
+            display: inline-block;
+          } */
+          
+          /* .drp-down p{
+            cursor: pointer;
+          } */
+          
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            /* min-width: 80%; */
+            width: 100%;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            top: 5rem;
+            left: 0vw;
+            display: none;
+            /* margin:0 10%; */
+            
+            /* left: 0; */
+            /* width: 100%; */
+            /* border: solid; */
+            /* margin-right: 5rem; */
+          }
+          
+          .dropdown-content a {
+            color: black;
+            padding: 0.8rem 1rem;
+            text-decoration: none;
+            display:block;
+            /* transition: 1s ease-in; */
+          }
+          
+          .dropdown-content a:hover {
+            background-color: #ddd;
+          }
+          
+          /* nav .about_dropdown:hover .dropdown-content {
+            display: block;
+          } */
+          
+          
+          
+          table,
+          th,
+          td {
+            /* border:solid; */
+            border-collapse: collapse;
+            padding: 0.3rem;
+            text-align: center;
+            cursor: pointer;
+            overflow-y: scroll;
+            margin: auto;
+          }
+          /* th{
+          box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          } */
+          
+          table th:hover {
+            border-bottom: solid;
+          }
+
+          @media screen and (max-width: 965px) {
+            
+            .menu {
+              display: none;
+              flex-direction: column;
+              width: 100%;
+              background-color: #f6f7fd;
+            }
+          
+            .sm-logo {
+              display: none;
+            }
+          
+            .menu li {
+              width: 100%;
+              text-align: center;
+            }
+          
+            .navbar a.icon {
+              display: block;
+              font-size: 2rem;
+            }
+          
+            .navbar.responsive {
+              position: relative;
+              flex-direction: column;
+              align-items: flex-start;
+            }
+          
+            .navbar.responsive .menu {
+              display: flex;
+            }
+          
+            .navbar.responsive .icon {
+              position: absolute;
+              right: 20px;
+              top: 20px;
+            }
+          
+            
+          
+            
+          }
+
+         
+          @media (max-width: 806px) {
+            nav ul {
+              display: none;
+            }
+          }
+          
+ 
+    
