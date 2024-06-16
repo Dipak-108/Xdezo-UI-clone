@@ -7,6 +7,7 @@
             font-family: sans-serif;
 
           }
+          * { outline: 1px solid red; }
           
           /* navigation bar CSS */
           
@@ -16,7 +17,7 @@
             box-sizing: border-box;
           }
           
-          a:hover,.drp-down p {
+          a:hover,.drp-down span {
             cursor: pointer;
           }
           
@@ -73,7 +74,7 @@
           
           
           
-          nav a:hover,p:hover {
+          nav a:hover,span:hover {
             color: #ec4d37;
           }
           
@@ -116,9 +117,9 @@
             display: inline-block;
           } */
           
-          /* .drp-down p{
+          /* .drp-down span{
             cursor: pointer;
-          } */
+           }  */
           
           .dropdown-content {
             display: none;
@@ -168,12 +169,13 @@
             overflow-y: scroll;
             margin: auto;
           }
-          /* th{
-          box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
-          } */
+
+          th{
+          border: 2px solid transparent;
+          }
           
           table th:hover {
-            border-bottom: solid;
+            border-bottom: 2px solid;
           }
 
           @media screen and (max-width: 965px) {

@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about_us  h1{
+    background-color: #E85A45;
+    padding: 4rem;
+    font-size:3rem;
+    text-align: center;
+    color: antiquewhite;
+    font-weight: 500;
+}
+
+.about_company .about_company_left h1{
+word-break: break-word;
+  letter-spacing: -0.022rem;
+  font-family: Inter, sans-serif;
+  line-height: 1.4;
+  color: rgb(236, 77, 55);
+  font-size: 2rem;
+  font-style: normal;
+  text-align: center;
+  white-space-collapse: collapse;
+  margin-bottom: 0px ;
+  font-weight: 700 ;
+  padding: 2rem;
+}
+
+.about_company_right{
+    padding: 2rem;
+    
+}
+
+.about_company_right p{
+    margin-bottom: 1rem;
+    font-size: 100%;
+}
+
+.dinesh_img_div{
+    max-width:90% ;
+    margin:auto ;
+}
+
+.ceo_image img{
+    width: 100%;
+}
+
+.ceo_quote .left_open_parenthesis{
+   max-height: 10rem;
+   padding: 0.5rem;
+   
+   
+}
+
+.ceo_quote .left_open_parenthesis img{
+    max-height: 30px;
+    max-width: 30px;
+ }
+
+ .ceo_quote .quote{
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: rgba(85, 85, 87, 0.858);
+ }
+
+ .ceo_quote .ceo_name{
+    padding: 0rem 0rem 2rem 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 400    ;
+ }
+
+
+
+
+@media (min-width:540px){
+    .about_us  h1{
+        font-size: 4rem;
+    }
+}
+
+@media (min-width:768px){
+    .about_us  h1{
+        font-size: 5rem;
+    }
+}
+
+
