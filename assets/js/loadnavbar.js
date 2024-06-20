@@ -6,9 +6,14 @@ function loadNavbar() {
             document.getElementById('navbar-container').innerHTML = data;
         })
         .catch(error => console.error('Error loading navbar:', error));
+        
+        console.log("navbar loaded");
 }
 
 
 window.onload = function() {
     loadNavbar();
+    
 };
+
+

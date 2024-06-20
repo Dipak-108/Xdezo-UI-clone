@@ -7,14 +7,18 @@ document.head.appendChild(link);
     fetch('../../nav_pages/navbar.html')
         .then(response => response.text())
         .then(data => {
+
+            
             document.getElementById('navbar-container').innerHTML = data;
+            console.log(data);
+            // console.log(data.getElementById("logo_image"));
+            
         })
         .catch(error => console.error('Error loading navbar:', error));
 }
 
-window.onload = function() {
 
-
-
+window.onload=function(){
     loadNavbar();
-};
+    
+}

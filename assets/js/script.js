@@ -6,7 +6,7 @@ let query_array=['.number_count','.instructors_count','.courses_count','.placeme
         function incrementNumber(element) {
             const target = +element.getAttribute('data-target');
             
-            const speed = 50; // Adjust the speed of the increment
+            const speed = 50; 
 
             const updateCount = () => {
                 const current = +element.innerText;
