@@ -2,7 +2,7 @@ let slides = document.getElementsByClassName("image");
 let currentSlide = 0;
 slides[currentSlide].style.display = "block";
 
-document.getElementById("next").addEventListener("click", function () {
+nextImage=function(){
   slides[currentSlide].style.display = "none";
   currentSlide++;
 
@@ -10,7 +10,12 @@ document.getElementById("next").addEventListener("click", function () {
     currentSlide = 0;
   }
   slides[currentSlide].style.display = "block";
-});
+}
+
+setInterval(function() {
+  nextImage();
+  
+}, 3500);
 
 document.getElementById("previous").addEventListener("click", function () {
   slides[currentSlide].style.display = "none";
@@ -20,3 +25,4 @@ document.getElementById("previous").addEventListener("click", function () {
   }
   slides[currentSlide].style.display = "block";
 });
+
