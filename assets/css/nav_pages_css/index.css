@@ -261,6 +261,15 @@ button:hover {
   text-align: center;
   padding-top: 1rem;
 }
+
+
+/* carousel section CSS */
+
+.carousel{
+  padding-bottom: 2rem;
+}
+
+
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 /* courses-and-training-section */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!! */

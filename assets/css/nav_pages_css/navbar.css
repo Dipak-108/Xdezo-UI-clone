@@ -74,7 +74,8 @@
           
           
           
-          nav a:hover,span:hover {
+          nav a:hover,
+          nav span:hover {
             color: #ec4d37;
           }
           

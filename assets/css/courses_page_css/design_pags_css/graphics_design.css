@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.masterclass h1{
+    font-size: 2rem;
+    text-align: justify;
+    text-align: center;
+    line-height: 2.5rem;
+    padding: 1rem 0.5rem;
+
+}
+
+.top p{
+    font-size: 1.2rem;
+    padding:1rem 1.5rem ;
+    text-align: justify;
+    /* text-align: center; */
+    font-weight: 500;
+}
+
+.top ul{
+    /* text-align: justify; */
+    padding:0 1.5rem 2rem 3rem;
+    font-size: 1.2rem;
+}
+
+.list_style_ul {
+    padding-left: -2rem;
+
+    li{
+
+        list-style-type: none;
+        font-size: 1.1rem;
+        margin-left: -1.5rem;
+    }
+ }
+
+ .top span{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.7rem;
+ }
+
+
+ .form_div form{
+    border: solid red;
+    margin: 1rem;
+ }
+
+ form > *{
+    display: block;
+    margin:0 5%
+ }
+
+ .form_div form input{
+    width: 90%;
+    padding: 1rem;
+
+ }
+
+ form label{
+    margin-top: 1rem;
+ }
+ form span{
+    color: red;
+ }
+
+ textarea{
+    width: 90%;
+    resize:none;
+ }
+
+
+ .form_div form input[type="submit"]{
+    width: 20%;
+    border: solid red;
+    padding: 0.5rem;
+    margin-top: 0.5rem ;
+    margin-bottom: 2rem;
+ }
+
+
+
+ 
+
+
+
+ @media (min-width:768px){
+.top{
+    display: flex;
+    flex-direction: row;
+}
+
+.top_div {
+    width: 50%;
+}
+
+.form_div{
+    width: 50%;
+}
+ }
