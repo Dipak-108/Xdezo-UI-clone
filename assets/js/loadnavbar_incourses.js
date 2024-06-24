@@ -10,7 +10,7 @@ document.head.appendChild(link);
 
             
             document.getElementById('navbar-container').innerHTML = data;
-            console.log(data);
+            // console.log(data);
             // console.log(data.getElementById("logo_image"));
             
         })

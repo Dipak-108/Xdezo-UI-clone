@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: rgb(35, 33, 33); 
 }
 
 .masterclass h1{
@@ -13,7 +14,7 @@
 
 }
 
-.top p{
+.top p:not(form p){
     font-size: 1.2rem;
     padding:1rem 1.5rem ;
     text-align: justify;
@@ -38,16 +39,17 @@
     }
  }
 
- .top span{
-    font-size: 1.5rem;
+ .top span:not(form span){
+    font-size: 1.2rem;
     font-weight: 500;
-    padding: 0.7rem;
+    padding: 2rem;
  }
 
 
  .form_div form{
-    border: solid red;
+    border: 3px solid #ec4d37;
     margin: 1rem;
+    box-shadow: 2px 5px 4px 1px rgba(0, 0, 0, 0.2);
  }
 
  form > *{
@@ -58,6 +60,8 @@
  .form_div form input{
     width: 90%;
     padding: 1rem;
+    outline: none;
+    font-size: 1rem;
 
  }
 
@@ -75,12 +79,68 @@
 
 
  .form_div form input[type="submit"]{
-    width: 20%;
-    border: solid red;
+    width: 25%;
+    border: 1px solid #ec4d37;
     padding: 0.5rem;
     margin-top: 0.5rem ;
     margin-bottom: 2rem;
+    cursor: pointer;
+    background-color: #ec4d37;
+    color: aliceblue;
+    border-radius: 5px;
  }
+ .form_div form input[type="submit"]:hover{
+    background-color: aliceblue;
+    color: #ec4d37;
+    border: 1px solid #ec4d37;
+ }
+
+ form p{
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-top: 0.5rem;
+ }
+
+
+ .about_gd_section h1{
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+    font-weight: 800;
+ }
+
+
+ .about_gd_section p{
+    font-size: 1.1rem;
+    padding:1rem 2rem;
+    text-align: justify;
+
+ }
+
+
+
+
+
+/* accordion css */
+
+.accordion{
+    border: solid;
+    cursor: pointer;
+}
+
+.accordion_details{
+    display: none;
+    /* cursor: pointer; */
+}
+
+.active{
+    display: block;
+    transition: 2s ease-in;
+}
+
+
+
+
 
 
 
@@ -101,4 +161,15 @@
 .form_div{
     width: 50%;
 }
+
+form p{
+    font-size: 1.5rem;
+    
+ }
+
+ .about_gd_section p{
+    font-weight: 500;
+    font-size: 1.2rem;
+    
+ }
  }
