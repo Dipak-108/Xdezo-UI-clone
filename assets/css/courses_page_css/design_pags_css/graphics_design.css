@@ -124,18 +124,53 @@
 /* accordion css */
 
 .accordion{
-    border: solid;
+    border:2px solid rgb(104, 104, 101);
+    border-top:0 ;
     cursor: pointer;
+
+    margin: 0rem 2rem;
 }
+
+.accordion_item_1{
+   border-top: 2px solid rgb(104, 104, 101);
+}
+
+.abt_course_h1{
+   text-align: center;
+}
+
+
+
+.accordion h1{
+   /* display: inline-block; */
+   padding:0.5rem;
+   font-size: 1rem;
+   border-bottom: 1px solid rgb(104, 104, 101);
+}
+
 
 .accordion_details{
     display: none;
+    
     /* cursor: pointer; */
+}
+.accordion_details ol,
+.accordion_details ul{
+   padding: 1rem 1.3rem;
 }
 
 .active{
     display: block;
     transition: 2s ease-in;
+}
+
+
+
+.banner_img img{
+   width: 95%;
+   border: solid;
+   display: block;
+   margin: 2rem auto;
 }
 
 
