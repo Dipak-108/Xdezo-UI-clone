@@ -14,7 +14,7 @@ let query_array=['.number_count','.instructors_count','.courses_count','.placeme
 
                 if (current < target) {
                     element.innerText = Math.ceil(current + increment);
-                    setTimeout(updateCount, 30); // Adjust the interval
+                    setTimeout(updateCount, 30); 
                 } else {
                     element.innerText = target;
                 }

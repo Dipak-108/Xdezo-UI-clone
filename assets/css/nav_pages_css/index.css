@@ -389,15 +389,20 @@ h2 {
   }
 
   #counter_section {
-    /* border: solid rebeccapurple; */
+    
     display: flex;
     justify-content: space-around;
+    gap: 1.5rem ;
+    flex: 1 1 500px;
+    flex-wrap: wrap;
 
-    .counter_justify {
+    .counter_justify :not(.not_naming) {
       font-size: 3rem;
       color: #ec4d37;
       font-weight: bold;
+      
     }
+   
   }
 
   .label_div {
@@ -409,6 +414,12 @@ h2 {
 
 .counter_inline {
   display: inline-block;
+  
+}
+
+.plus_sign{
+  font-size: 0.5rem;
+  
 }
 
 @media (max-width: 806px) {

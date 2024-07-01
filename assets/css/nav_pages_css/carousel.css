@@ -11,7 +11,7 @@ img {
   width: 80%;
   margin: auto;
   position: relative;
-  border: solid rebeccapurple; 
+  border: solid #ec4d37; 
   display: flex;
   justify-content: space-between;
   
@@ -20,7 +20,7 @@ img {
 }
 .image {
   width: 100%; 
-  border: solid;
+  
   object-fit: cover;
   object-position: center;
   display: none;
@@ -34,12 +34,14 @@ img {
     top: 95%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: red;
+    background: #ec4c375f;
+    padding-top: 0;
+    
     
 }
 #previous,
 #next {
-  background-color: rebeccapurple;
+  background-color: #ec4d37;
   padding: 1rem;
   cursor: pointer;
   position: absolute;
