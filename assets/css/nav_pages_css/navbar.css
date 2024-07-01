@@ -206,6 +206,7 @@
               position: relative;
               flex-direction: column;
               align-items: flex-start;
+              /* border: 8px solid;    */
             }
           
             .navbar.responsive .menu {
@@ -229,6 +230,14 @@
               display: none;
             }
           }
+
+
+          /* @media(max-width:400px){
+            .dropdown-content td{
+              color: red;
+              border: solid;
+            }
+          } */
           
  
     

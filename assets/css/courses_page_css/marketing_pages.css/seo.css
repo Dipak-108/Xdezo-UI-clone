@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(35, 33, 33);
+  }
+  
+  .masterclass h1 {
+    font-size: 2rem;
+    text-align: justify;
+    text-align: center;
+    line-height: 2.5rem;
+    padding: 1rem 0.5rem;
+  }
+  
+  .top p:not(form p) {
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+    text-align: justify;
+    /* text-align: center; */
+    font-weight: 500;
+  }
+  
+  .top ul {
+    /* text-align: justify; */
+    padding: 0 1.5rem 2rem 3rem;
+    font-size: 1.2rem;
+  }
+  
+  .list_style_ul {
+    padding-left: -2rem;
+  
+    li {
+      list-style-type: none;
+      font-size: 1.1rem;
+      margin-left: -1.5rem;
+    }
+  }
+  
+  .top span:not(form span) {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 2rem;
+  }
+  
+  .form_div form {
+    border: 3px solid #ec4d37;
+    margin: 1rem;
+    box-shadow: 2px 5px 4px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  form > * {
+    display: block;
+    margin: 0 5%;
+  }
+  
+  .form_div form input {
+    width: 90%;
+    padding: 1rem;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  form label {
+    margin-top: 1rem;
+  }
+  form span {
+    color: red;
+  }
+  
+  textarea {
+    width: 90%;
+    resize: none;
+  }
+  
+  .form_div form input[type="submit"] {
+    width: 25%;
+    border: 1px solid #ec4d37;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    background-color: #ec4d37;
+    color: aliceblue;
+    border-radius: 5px;
+  }
+  .form_div form input[type="submit"]:hover {
+    background-color: aliceblue;
+    color: #ec4d37;
+    border: 1px solid #ec4d37;
+  }
+  
+  form p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-top: 0.5rem;
+  }
+  
+  .about_gd_section h1 {
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+    font-weight: 800;
+  }
+  
+  .about_gd_section p {
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    text-align: justify;
+  }
+  
+  /* accordion css */
+  
+  .accordion {
+    border: 2px solid rgb(104, 104, 101);
+    border-top: 0;
+    cursor: pointer;
+  
+    margin: 0rem 2rem;
+  }
+  
+  .accordion_item_1 {
+    border-top: 2px solid rgb(104, 104, 101);
+  }
+  
+  .abt_course_h1 {
+    text-align: center;
+  }
+  
+  .accordion h1 {
+    /* display: inline-block; */
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-bottom: 1px solid rgb(104, 104, 101);
+  }
+  
+  .accordion_details {
+    display: none;
+  
+    /* cursor: pointer; */
+  }
+  .accordion_details ol,
+  .accordion_details ul {
+    padding: 1rem 1.3rem;
+  }
+  
+  .active {
+    display: block;
+    transition: 2s ease-in;
+  }
+  
+  .banner_img img {
+    width: 95%;
+    border: solid;
+    display: block;
+    margin: 2rem auto;
+  }
+  
+  @media (min-width: 768px) {
+    .top {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .top_div {
+      width: 50%;
+    }
+  
+    .form_div {
+      width: 50%;
+    }
+  
+    form p {
+      font-size: 1.5rem;
+    }
+  
+    .about_gd_section p {
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+  }
+  
