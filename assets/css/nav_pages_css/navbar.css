@@ -28,6 +28,8 @@ a:hover,
   position: sticky;
   top: 0;
   z-index: 1;
+ 
+  width: 100%;
 }
 .navbar {
   display: flex;
@@ -35,13 +37,18 @@ a:hover,
   align-items: center;
   padding: 1rem;
   margin: 0 0.1rem;
-  width: 100%;
+  
   z-index: 10;
   background-color: #f6f7fd;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .sm-logo div {
   display: inline-block;
+}
+
+.sm-logo img{
+ 
+    object-fit: contain;
 }
 
 .logo img {
