@@ -299,11 +299,14 @@ button:hover {
   margin-top: 0.3rem;
   /* border: solid #7415c6; */
   /* min-width: 24%; */
-  flex: 1 1 300px;
+  flex: 1 1 200px;
   padding: 1.5rem;
   cursor: pointer;
   border-radius: 5px;
-  max-width: 400px;
+  max-width: 300px;
+  border: 2px solid;
+  border-bottom: none;
+  height: 470px;
 }
 
 .courses-and-training-card-div .card:hover {
